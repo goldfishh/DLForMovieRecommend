@@ -53,3 +53,30 @@ feed_dict[self.last_pair_out] = out
 在这里,self.positive, 实际上可以看做是一个常数, 所以损失函数实际只有负样本起作用, self.negative减小的同时, self.positive会增大!,所以总的损失函数增大是有可能的!  
 解决办法是: 用placeholder把正负样本都加进去, 产生两个输入流, 最后汇聚在损失函数  
 过程中可能覆盖了变量, 相同变量被重复赋值(因为有两个输入流),结果上是朝正确方向的  
+'''
+Epoch 1 [18.0 s]	train=5354.8681 [0.0 s]  
+Epoch 2 [17.7 s]	train=5350.6970 [0.0 s]  
+Epoch 3 [17.7 s]	train=5350.1972 [0.0 s]  
+Epoch 4 [17.5 s]	train=5349.6855 [0.0 s]  
+Epoch 5 [17.7 s]	train=5346.7460 [0.0 s]  
+Epoch 6 [18.1 s]	train=4520.9783 [0.0 s]  
+Epoch 7 [18.8 s]	train=3497.4401 [0.0 s]  
+Epoch 8 [18.8 s]	train=3295.0038 [0.0 s]  
+Epoch 9 [18.2 s]	train=3173.6831 [0.0 s]  
+Epoch 10 [18.1 s]	train=3077.8043 [0.0 s]  
+Epoch 11 [18.0 s]	train=2981.6315 [0.0 s]  
+Epoch 12 [18.0 s]	train=2901.3917 [0.0 s]  
+Epoch 13 [18.0 s]	train=2831.0834 [0.0 s]  
+Epoch 14 [18.2 s]	train=2775.1349 [0.0 s]  
+Epoch 15 [18.0 s]	train=2729.9486 [0.0 s]  
+Epoch 16 [17.7 s]	train=2694.1759 [0.0 s]  
+Epoch 17 [18.0 s]	train=2654.7019 [0.0 s]  
+Epoch 18 [18.2 s]	train=2632.2117 [0.0 s]  
+Epoch 19 [18.0 s]	train=2605.1232 [0.0 s]  
+Epoch 20 [18.1 s]	train=2575.8986 [0.0 s]  
+Epoch 21 [18.6 s]	train=2556.0981 [0.0 s]  
+Epoch 22 [17.6 s]	train=2537.3208 [0.0 s]  
+Epoch 23 [18.5 s]	train=2525.1528 [0.0 s]  
+Epoch 24 [18.0 s]	train=2512.0661 [0.0 s]  
+Epoch 25 [18.0 s]	train=2498.1805 [0.0 s]  
+'''
