@@ -32,4 +32,4 @@ http://blog.sina.com.cn/s/blog_6ca0f5eb0102wr4j.html
 进过修改后的神经网络终于朝着loss函数减小的方向前进了
 
 最后的loss函数:
-![NCF_loss](NCF_loss.png)
+![NCF_loss](NCF_loss.PNG)
