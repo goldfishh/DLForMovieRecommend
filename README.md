@@ -119,3 +119,73 @@ userID和movieID同号时会认为是同一个特征
 今天开始把数据集换为ml-100K, 训练速度大幅度提升  
 数据集修改格式真麻烦, 主要是不想修改源代码处理  
 数据集中的movieID特征和movieID真实值起始位的错误  
+  
+2019/2/18  
+找到一个有关的repo.  
+https://github.com/zhang122994917/Pairwise-DeepFm  
+修改后再python3运行一遍  
+中间输出:  
+```
+Epoch 0 Global_step 100	Train_loss: 0.6430
+Epoch 0 Global_step 200	Train_loss: 0.5985
+Epoch 0 Global_step 300	Train_loss: 0.5951	Eval_NDCG@10: 0.2554	Eval_HR@10: 267.0000
+Epoch 0 Global_step 400	Train_loss: 0.5931
+Epoch 0 Global_step 500	Train_loss: 0.5650
+Epoch 0 Global_step 600	Train_loss: 0.4820	Eval_NDCG@10: 0.2888	Eval_HR@10: 349.0000
+Epoch 0 Global_step 700	Train_loss: 0.5026
+Epoch 0 Global_step 800	Train_loss: 0.5451
+Epoch 0 Global_step 900	Train_loss: 0.4134	Eval_NDCG@10: 0.3016	Eval_HR@10: 342.0000
+Epoch 0 Global_step 1000	Train_loss: 0.5233
+Epoch 0 Global_step 1100	Train_loss: 0.5484
+Epoch 0 Global_step 1200	Train_loss: 0.5101	Eval_NDCG@10: 0.2999	Eval_HR@10: 337.0000
+Epoch 0 Global_step 1300	Train_loss: 0.5972
+Epoch 0 Global_step 1400	Train_loss: 0.5243
+Epoch 0 Global_step 1500	Train_loss: 0.5049	Eval_NDCG@10: 0.3115	Eval_HR@10: 368.0000
+Epoch 0 Global_step 1600	Train_loss: 0.5118
+Epoch 0 Global_step 1700	Train_loss: 0.4941
+Epoch 0 Global_step 1800	Train_loss: 0.5986	Eval_NDCG@10: 0.3126	Eval_HR@10: 374.0000
+Epoch 0 Global_step 1900	Train_loss: 0.3647
+Epoch 0 Global_step 2000	Train_loss: 0.5118
+Epoch 0 Global_step 2100	Train_loss: 0.5011	Eval_NDCG@10: 0.2907	Eval_HR@10: 337.0000
+Epoch 0 Global_step 2200	Train_loss: 0.4066
+Epoch 0 Global_step 2300	Train_loss: 0.4717
+Epoch 0 Global_step 2400	Train_loss: 0.6106	Eval_NDCG@10: 0.3223	Eval_HR@10: 400.0000
+Epoch 1 Global_step 100	Train_loss: 0.4646
+Epoch 1 Global_step 200	Train_loss: 0.4552
+Epoch 1 Global_step 300	Train_loss: 0.3952	Eval_NDCG@10: 0.3294	Eval_HR@10: 415.0000
+Epoch 1 Global_step 400	Train_loss: 0.4910
+Epoch 1 Global_step 500	Train_loss: 0.3658
+Epoch 1 Global_step 600	Train_loss: 0.3878	Eval_NDCG@10: 0.3456	Eval_HR@10: 425.0000
+Epoch 1 Global_step 700	Train_loss: 0.5262
+Epoch 1 Global_step 800	Train_loss: 0.4190
+Epoch 1 Global_step 900	Train_loss: 0.3945	Eval_NDCG@10: 0.3571	Eval_HR@10: 424.0000
+Epoch 1 Global_step 1000	Train_loss: 0.3325
+Epoch 1 Global_step 1100	Train_loss: 0.4275
+Epoch 1 Global_step 1200	Train_loss: 0.5733	Eval_NDCG@10: 0.3232	Eval_HR@10: 424.0000
+Epoch 1 Global_step 1300	Train_loss: 0.4317
+Epoch 1 Global_step 1400	Train_loss: 0.3936
+Epoch 1 Global_step 1500	Train_loss: 0.4560	Eval_NDCG@10: 0.3420	Eval_HR@10: 428.0000
+Epoch 1 Global_step 1600	Train_loss: 0.4720
+Epoch 1 Global_step 1700	Train_loss: 0.3584
+Epoch 1 Global_step 1800	Train_loss: 0.3436	Eval_NDCG@10: 0.3575	Eval_HR@10: 437.0000
+Epoch 1 Global_step 1900	Train_loss: 0.3343
+Epoch 1 Global_step 2000	Train_loss: 0.4269
+Epoch 1 Global_step 2100	Train_loss: 0.3630	Eval_NDCG@10: 0.3705	Eval_HR@10: 455.0000
+Epoch 1 Global_step 2200	Train_loss: 0.3948
+Epoch 1 Global_step 2300	Train_loss: 0.4370
+Epoch 1 Global_step 2400	Train_loss: 0.3405	Eval_NDCG@10: 0.3392	Eval_HR@10: 445.0000
+
+最后程序大约第5轮NDCG可以到0.4, HR可以到500
+```  
+发现自己对NDCG理解有问题...  
+idealNDCG是当前推荐列表命中情况下的最好排序CG值的和  
+比如:  
+当前推荐列表命中情况:  
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0] 
+NDCG = 1 / log2(5)  
+那么最好排序:  
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0]  
+idealNDCG = 1 / log2(2) = 1    
+NDCG = 1 / log2(5) ≈ 0.43  
+  
+现在试一下换数据集
