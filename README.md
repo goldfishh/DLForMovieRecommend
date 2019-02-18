@@ -189,3 +189,19 @@ idealNDCG = 1 / log2(2) = 1
 NDCG = 1 / log2(5) ≈ 0.43  
   
 现在试一下换数据集
+数据集换好后  
+NDCG ≈ 0.39  
+HIT ≈ 390  
+  
+发现了致命bug!  
+终于调试好了!  
+原来不是模型的锅, 而是自己写的指标函数的...  
+```
+test_features = []
+for i in item_list:
+    test_features.append([u, i+user_num])
+ranking = self.sess.run(self.out[0], feed_dict={self.train_features: [test_features],
+                                                        self.dropout_keep: self.keep_prob})
+```  
+模型训练好后喂数据给模型, movieID忘加user_num了!!  
+改了后HIT: 638!, MAP ≈ 0.153, NDCG还没改好, 不过应该会超过0.4的  
