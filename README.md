@@ -516,3 +516,16 @@ NDCG%10: 0.2806827094952065
 结果总算是搭好了：  
 http://jinyu.me  
   
+2019/2/20  
+打算从头开始看：[推荐系统遇上深度学习系列](https://blog.csdn.net/jiangjiang_jian/article/details/80864300)  
+加深自己对深度学习应用推荐系统领域知识的理解  
+  
+1. FM模型优化公式的推导
+
+2. FFM field-aware 拓展了什么
+
+3. DeepFM模型 
+
+4. DeepFM 与 NFM 对比
+
+5. Deep&Cross Network 模型中 Cross模型用处？
