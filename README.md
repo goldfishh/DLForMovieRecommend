@@ -518,14 +518,25 @@ http://jinyu.me
   
 2019/2/20  
 打算从头开始看：[推荐系统遇上深度学习系列](https://blog.csdn.net/jiangjiang_jian/article/details/80864300)  
-加深自己对深度学习应用推荐系统领域知识的理解  
+加深自己对深度学习应用推荐系统领域知识的理解   
+   
+1. FM模型优化公式的推导  
   
-1. FM模型优化公式的推导
-
-2. FFM field-aware 拓展了什么
-
-3. DeepFM模型 
-
-4. DeepFM 与 NFM 对比
-
-5. Deep&Cross Network 模型中 Cross模型用处？
+2. FFM field-aware 拓展了什么  
+  
+3. DeepFM模型  
+  
+4. DeepFM 与 NFM 对比  
+  
+5. Deep&Cross Network 模型中 Cross模型用处？  
+DeepFM 是 DNN 与 FM 的 并行组合  
+Cross Network 是 DNN 与 Cross Network 的 并行组合  
+FM因为效率原因一般只考虑二阶特征组合  
+Cross Network因为多层交叉, 是多阶特征组合  
+6. Cross Network学习   
+![Cross Network](http://xudongyang.coding.me/dcn/dcn.png)  
+http://xudongyang.coding.me/dcn/   
+  
+7. attention机制  
+https://blog.csdn.net/jiangjiang_jian/article/details/80674250  
+代码  
