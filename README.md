@@ -540,3 +540,10 @@ http://xudongyang.coding.me/dcn/
 7. attention机制  
 https://blog.csdn.net/jiangjiang_jian/article/details/80674250  
 代码  
+
+2019/2/21  
+昨天复习先放着, 今天打算做下开题报告的准备  
+提纲已列好, 主要写"主要内容" 和 "国内外研究历史与现状"  
+  
+思考过程有一个很有趣问题:
+用深度学习训练好的模型对于冷启动的用户和电影有什么推荐效果吗?  
