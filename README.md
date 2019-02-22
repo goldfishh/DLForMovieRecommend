@@ -558,3 +558,12 @@ https://blog.csdn.net/jiangjiang_jian/article/details/80674250
 现在平台是用什么技术做推荐系统没有一点了解的  
 以后多看博文提高自己姿势吧...  
   
+2019/2/22  
+今天主要为实验做准备, 在网上搜一下比较好的FM, FFM, DeepFM代码  
+开始找的是这个:  
+https://github.com/princewen/tensorflow_practice/tree/master/recommendation/recommendation-FM-demo
+但是呢, 这代码可读性很差, 用的特征只有用户和电影的ID, 由csr_matrix实现, 因为后期要添加其他特征, 代码拓展性就不如意了  
+下午, 找到一个比较好的repo.  
+https://github.com/Johnson0722/CTR_Prediction
+今天看了FM部分的代码, 之后把他修改下  
+btw. 博客想加个很神奇的东西...
