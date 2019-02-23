@@ -559,6 +559,11 @@ https://blog.csdn.net/jiangjiang_jian/article/details/80674250
 以后多看博文提高自己姿势吧...  
   
 2019/2/22  
+补:   
+NFM代码有两个问题:  
+第一个是模型输出有两个选择, out[0] 和 out[1] 实验结果out[0]更好一些, 但是out[1]结果也没有多差, 大概差距10%  
+模型训练的最终结果和模型保存后读取的结果不同, 一般稍微低过训练直接输出的结果,原因?  
+
 今天主要为实验做准备, 在网上搜一下比较好的FM, FFM, DeepFM代码  
 开始找的是这个:  
 https://github.com/princewen/tensorflow_practice/tree/master/recommendation/recommendation-FM-demo
@@ -567,3 +572,5 @@ https://github.com/princewen/tensorflow_practice/tree/master/recommendation/reco
 https://github.com/Johnson0722/CTR_Prediction
 今天看了FM部分的代码, 之后把他修改下  
 btw. 博客想加个很神奇的东西...
+
+2019/02/23
