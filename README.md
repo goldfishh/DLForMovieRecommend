@@ -585,3 +585,250 @@ https://github.com/Johnson0722/CTR_Prediction
 FM跑通了, 新学到sparse_placeholder等稀疏喂数据方式  
 现在在跑epoch = 40, 的程序, 跑完估计时间大约要 5 小时 ......  
   
+```
+start training...
+2019-02-24 14:59:27,014 : INFO : Initializing fresh parameters for the my Factorization Machine
+2019-02-24 15:00:31,726 : INFO : Iteration 500: with minibatch training loss = 0.4664325714111328
+2019-02-24 15:01:35,974 : INFO : Iteration 1000: with minibatch training loss = 0.5151827931404114
+2019-02-24 15:02:40,968 : INFO : Iteration 1500: with minibatch training loss = 0.47085273265838623
+Epoch 1, Overall loss = 0.498
+2019-02-24 15:03:45,425 : INFO : Iteration 2000: with minibatch training loss = 0.44380834698677063
+2019-02-24 15:04:49,097 : INFO : Iteration 2500: with minibatch training loss = 0.4268592596054077
+2019-02-24 15:05:53,713 : INFO : Iteration 3000: with minibatch training loss = 0.5693184733390808
+2019-02-24 15:06:59,046 : INFO : Iteration 3500: with minibatch training loss = 0.43050941824913025
+Epoch 2, Overall loss = 0.438
+2019-02-24 15:08:02,425 : INFO : Iteration 4000: with minibatch training loss = 0.41970735788345337
+2019-02-24 15:09:06,925 : INFO : Iteration 4500: with minibatch training loss = 0.4762305021286011
+2019-02-24 15:10:12,421 : INFO : Iteration 5000: with minibatch training loss = 0.44770875573158264
+Epoch 3, Overall loss = 0.421
+2019-02-24 15:11:18,326 : INFO : Iteration 5500: with minibatch training loss = 0.3069072663784027
+2019-02-24 15:12:21,743 : INFO : Iteration 6000: with minibatch training loss = 0.5221328735351562
+2019-02-24 15:13:26,043 : INFO : Iteration 6500: with minibatch training loss = 0.35997655987739563
+2019-02-24 15:14:31,285 : INFO : Iteration 7000: with minibatch training loss = 0.40101051330566406
+Epoch 4, Overall loss = 0.407
+2019-02-24 15:15:34,527 : INFO : Iteration 7500: with minibatch training loss = 0.39187681674957275
+2019-02-24 15:16:38,505 : INFO : Iteration 8000: with minibatch training loss = 0.506892204284668
+2019-02-24 15:17:43,410 : INFO : Iteration 8500: with minibatch training loss = 0.36633235216140747
+Epoch 5, Overall loss = 0.402
+recommend 200 user costs 28.35388493537903s
+recommend 200 user costs 28.738603115081787s
+recommend 200 user costs 29.140575170516968s
+recommend 200 user costs 29.17214012145996s
+recommend 200 user costs 29.234046459197998s
+recommend 200 user costs 29.30038094520569s
+recommend 200 user costs 29.330805778503418s
+recommend 200 user costs 29.493829011917114s
+recommend 200 user costs 29.828416109085083s
+recommend 200 user costs 29.86491584777832s
+recommend 200 user costs 29.73957371711731s
+recommend 200 user costs 30.039836645126343s
+recommend 200 user costs 29.968694925308228s
+recommend 200 user costs 29.966902017593384s
+recommend 200 user costs 30.23908233642578s
+recommend 200 user costs 30.160735607147217s
+recommend 200 user costs 30.21017599105835s
+recommend 200 user costs 30.304189443588257s
+recommend 200 user costs 30.462279319763184s
+recommend 200 user costs 30.344521045684814s
+recommend 200 user costs 30.5133056640625s
+recommend 200 user costs 30.535704612731934s
+recommend 200 user costs 30.590941667556763s
+recommend 200 user costs 30.56850814819336s
+recommend 200 user costs 30.735422372817993s
+recommend 200 user costs 30.985790252685547s
+recommend 200 user costs 31.15510368347168s
+recommend 200 user costs 32.08350396156311s
+recommend 200 user costs 31.2036874294281s
+recommend 200 user costs 31.242165327072144s
+hit: 3180
+HR%10: 0.03094619449391294
+MAP%10: 0.12063713815180253
+NDCG%10: 0.17106648184213963
+2019-02-24 15:34:01,757 : INFO : Iteration 9000: with minibatch training loss = 0.3175331950187683
+2019-02-24 15:35:11,842 : INFO : Iteration 9500: with minibatch training loss = 0.40875381231307983
+2019-02-24 15:36:23,826 : INFO : Iteration 10000: with minibatch training loss = 0.3472834825515747
+2019-02-24 15:37:36,109 : INFO : Iteration 10500: with minibatch training loss = 0.43041545152664185
+Epoch 6, Overall loss = 0.394
+2019-02-24 15:38:46,261 : INFO : Iteration 11000: with minibatch training loss = 0.4445030689239502
+2019-02-24 15:39:56,913 : INFO : Iteration 11500: with minibatch training loss = 0.35770729184150696
+2019-02-24 15:41:08,178 : INFO : Iteration 12000: with minibatch training loss = 0.46357208490371704
+Epoch 7, Overall loss = 0.391
+2019-02-24 15:42:19,143 : INFO : Iteration 12500: with minibatch training loss = 0.37092864513397217
+2019-02-24 15:43:29,473 : INFO : Iteration 13000: with minibatch training loss = 0.43272578716278076
+2019-02-24 15:44:40,555 : INFO : Iteration 13500: with minibatch training loss = 0.46249210834503174
+2019-02-24 15:45:52,328 : INFO : Iteration 14000: with minibatch training loss = 0.5180768370628357
+Epoch 8, Overall loss = 0.393
+2019-02-24 15:47:02,032 : INFO : Iteration 14500: with minibatch training loss = 0.4181518852710724
+2019-02-24 15:48:12,873 : INFO : Iteration 15000: with minibatch training loss = 0.377219557762146
+2019-02-24 15:49:24,475 : INFO : Iteration 15500: with minibatch training loss = 0.3139384984970093
+Epoch 9, Overall loss = 0.387
+2019-02-24 15:50:35,454 : INFO : Iteration 16000: with minibatch training loss = 0.3119763135910034
+2019-02-24 15:51:45,790 : INFO : Iteration 16500: with minibatch training loss = 0.40119796991348267
+2019-02-24 15:52:57,163 : INFO : Iteration 17000: with minibatch training loss = 0.4552682638168335
+2019-02-24 15:54:09,340 : INFO : Iteration 17500: with minibatch training loss = 0.32665103673934937
+Epoch 10, Overall loss = 0.384
+hit: 3265
+HR%10: 0.031773372648624454
+MAP%10: 0.12107917329919476
+NDCG%10: 0.17235115152113967
+2019-02-24 16:10:24,495 : INFO : Iteration 18000: with minibatch training loss = 0.3861101269721985
+2019-02-24 16:11:35,084 : INFO : Iteration 18500: with minibatch training loss = 0.33651965856552124
+2019-02-24 16:12:46,595 : INFO : Iteration 19000: with minibatch training loss = 0.3118653893470764
+Epoch 11, Overall loss = 0.385
+2019-02-24 16:13:57,844 : INFO : Iteration 19500: with minibatch training loss = 0.3327292203903198
+2019-02-24 16:15:07,880 : INFO : Iteration 20000: with minibatch training loss = 0.3508645296096802
+2019-02-24 16:16:18,943 : INFO : Iteration 20500: with minibatch training loss = 0.42334264516830444
+2019-02-24 16:17:30,827 : INFO : Iteration 21000: with minibatch training loss = 0.3660416603088379
+Epoch 12, Overall loss = 0.384
+2019-02-24 16:18:40,974 : INFO : Iteration 21500: with minibatch training loss = 0.3886626362800598
+2019-02-24 16:19:52,039 : INFO : Iteration 22000: with minibatch training loss = 0.3742499351501465
+2019-02-24 16:21:03,545 : INFO : Iteration 22500: with minibatch training loss = 0.4330451190471649
+Epoch 13, Overall loss = 0.385
+2019-02-24 16:22:15,417 : INFO : Iteration 23000: with minibatch training loss = 0.40674304962158203
+2019-02-24 16:23:25,531 : INFO : Iteration 23500: with minibatch training loss = 0.3865116238594055
+2019-02-24 16:24:36,507 : INFO : Iteration 24000: with minibatch training loss = 0.3743622899055481
+2019-02-24 16:25:48,232 : INFO : Iteration 24500: with minibatch training loss = 0.34209632873535156
+Epoch 14, Overall loss = 0.383
+2019-02-24 16:26:57,957 : INFO : Iteration 25000: with minibatch training loss = 0.375931978225708
+2019-02-24 16:28:08,599 : INFO : Iteration 25500: with minibatch training loss = 0.427631676197052
+2019-02-24 16:29:19,859 : INFO : Iteration 26000: with minibatch training loss = 0.2829141616821289
+Epoch 15, Overall loss = 0.38
+hit: 3253
+HR%10: 0.031656594556194594
+MAP%10: 0.12114342917231885
+NDCG%10: 0.17158307512477847
+2019-02-24 16:45:42,602 : INFO : Iteration 26500: with minibatch training loss = 0.29819256067276
+2019-02-24 16:46:52,826 : INFO : Iteration 27000: with minibatch training loss = 0.3379024565219879
+2019-02-24 16:48:03,934 : INFO : Iteration 27500: with minibatch training loss = 0.4339085519313812
+2019-02-24 16:49:15,692 : INFO : Iteration 28000: with minibatch training loss = 0.46056073904037476
+Epoch 16, Overall loss = 0.38
+2019-02-24 16:50:25,668 : INFO : Iteration 28500: with minibatch training loss = 0.6689988374710083
+2019-02-24 16:51:36,190 : INFO : Iteration 29000: with minibatch training loss = 0.36170095205307007
+2019-02-24 16:52:47,672 : INFO : Iteration 29500: with minibatch training loss = 0.4743526875972748
+Epoch 17, Overall loss = 0.381
+2019-02-24 16:53:58,362 : INFO : Iteration 30000: with minibatch training loss = 0.3340596556663513
+2019-02-24 16:55:08,100 : INFO : Iteration 30500: with minibatch training loss = 0.3682502508163452
+2019-02-24 16:56:18,736 : INFO : Iteration 31000: with minibatch training loss = 0.3429356813430786
+2019-02-24 16:57:29,955 : INFO : Iteration 31500: with minibatch training loss = 0.3414451479911804
+Epoch 18, Overall loss = 0.38
+2019-02-24 16:58:39,748 : INFO : Iteration 32000: with minibatch training loss = 0.39093440771102905
+2019-02-24 16:59:50,018 : INFO : Iteration 32500: with minibatch training loss = 0.30766886472702026
+2019-02-24 17:01:00,840 : INFO : Iteration 33000: with minibatch training loss = 0.5031550526618958
+Epoch 19, Overall loss = 0.374
+2019-02-24 17:02:11,598 : INFO : Iteration 33500: with minibatch training loss = 0.45825809240341187
+2019-02-24 17:03:21,245 : INFO : Iteration 34000: with minibatch training loss = 0.3882381319999695
+2019-02-24 17:04:32,035 : INFO : Iteration 34500: with minibatch training loss = 0.4089142680168152
+2019-02-24 17:05:43,410 : INFO : Iteration 35000: with minibatch training loss = 0.458892822265625
+Epoch 20, Overall loss = 0.379
+hit: 3332
+HR%10: 0.03242538366469117
+MAP%10: 0.1232614120151372
+NDCG%10: 0.17567580497170382
+2019-02-24 17:21:48,960 : INFO : Iteration 35500: with minibatch training loss = 0.4088948667049408
+2019-02-24 17:22:59,111 : INFO : Iteration 36000: with minibatch training loss = 0.38906729221343994
+2019-02-24 17:24:09,912 : INFO : Iteration 36500: with minibatch training loss = 0.5096989274024963
+Epoch 21, Overall loss = 0.375
+2019-02-24 17:25:20,515 : INFO : Iteration 37000: with minibatch training loss = 0.3659707009792328
+2019-02-24 17:26:30,100 : INFO : Iteration 37500: with minibatch training loss = 0.31192973256111145
+2019-02-24 17:27:40,801 : INFO : Iteration 38000: with minibatch training loss = 0.29405611753463745
+2019-02-24 17:28:51,921 : INFO : Iteration 38500: with minibatch training loss = 0.33653461933135986
+Epoch 22, Overall loss = 0.375
+2019-02-24 17:30:01,571 : INFO : Iteration 39000: with minibatch training loss = 0.3889457583427429
+2019-02-24 17:31:11,581 : INFO : Iteration 39500: with minibatch training loss = 0.6368078589439392
+2019-02-24 17:32:22,659 : INFO : Iteration 40000: with minibatch training loss = 0.3573216497898102
+Epoch 23, Overall loss = 0.373
+2019-02-24 17:33:33,391 : INFO : Iteration 40500: with minibatch training loss = 0.2628760039806366
+2019-02-24 17:34:42,910 : INFO : Iteration 41000: with minibatch training loss = 0.3163571357727051
+2019-02-24 17:35:53,531 : INFO : Iteration 41500: with minibatch training loss = 0.3302443027496338
+2019-02-24 17:37:04,671 : INFO : Iteration 42000: with minibatch training loss = 0.3239349126815796
+Epoch 24, Overall loss = 0.372
+2019-02-24 17:38:14,251 : INFO : Iteration 42500: with minibatch training loss = 0.3285844922065735
+2019-02-24 17:39:24,159 : INFO : Iteration 43000: with minibatch training loss = 0.3857440948486328
+2019-02-24 17:40:35,054 : INFO : Iteration 43500: with minibatch training loss = 0.29615288972854614
+Epoch 25, Overall loss = 0.374
+hit: 3330
+HR%10: 0.03240592064928619
+MAP%10: 0.12331134572114358
+NDCG%10: 0.1753612089566809
+2019-02-24 17:56:44,359 : INFO : Iteration 44000: with minibatch training loss = 0.3132302165031433
+2019-02-24 17:57:53,958 : INFO : Iteration 44500: with minibatch training loss = 0.3828069567680359
+2019-02-24 17:59:04,245 : INFO : Iteration 45000: with minibatch training loss = 0.3047141432762146
+2019-02-24 18:00:15,442 : INFO : Iteration 45500: with minibatch training loss = 0.3696460723876953
+Epoch 26, Overall loss = 0.37
+2019-02-24 18:01:25,351 : INFO : Iteration 46000: with minibatch training loss = 0.4000228941440582
+2019-02-24 18:02:35,308 : INFO : Iteration 46500: with minibatch training loss = 0.3475695848464966
+2019-02-24 18:03:46,276 : INFO : Iteration 47000: with minibatch training loss = 0.4330185651779175
+Epoch 27, Overall loss = 0.371
+2019-02-24 18:04:56,926 : INFO : Iteration 47500: with minibatch training loss = 0.33744680881500244
+2019-02-24 18:06:06,457 : INFO : Iteration 48000: with minibatch training loss = 0.31060025095939636
+2019-02-24 18:07:16,883 : INFO : Iteration 48500: with minibatch training loss = 0.40795886516571045
+2019-02-24 18:08:28,108 : INFO : Iteration 49000: with minibatch training loss = 0.36964988708496094
+Epoch 28, Overall loss = 0.374
+2019-02-24 18:09:37,727 : INFO : Iteration 49500: with minibatch training loss = 0.27569347620010376
+2019-02-24 18:10:47,624 : INFO : Iteration 50000: with minibatch training loss = 0.3997970223426819
+2019-02-24 18:11:58,413 : INFO : Iteration 50500: with minibatch training loss = 0.3598373532295227
+Epoch 29, Overall loss = 0.372
+2019-02-24 18:13:09,142 : INFO : Iteration 51000: with minibatch training loss = 0.4646188020706177
+2019-02-24 18:14:18,677 : INFO : Iteration 51500: with minibatch training loss = 0.32982712984085083
+2019-02-24 18:15:30,877 : INFO : Iteration 52000: with minibatch training loss = 0.37617555260658264
+2019-02-24 18:16:42,540 : INFO : Iteration 52500: with minibatch training loss = 0.333675354719162
+Epoch 30, Overall loss = 0.367
+hit: 3373
+HR%10: 0.03282437548049319
+MAP%10: 0.12622995386221714
+NDCG%10: 0.17820010775981837
+2019-02-24 18:33:33,157 : INFO : Iteration 53000: with minibatch training loss = 0.2850351333618164
+2019-02-24 18:34:43,864 : INFO : Iteration 53500: with minibatch training loss = 0.3750549554824829
+2019-02-24 18:35:55,359 : INFO : Iteration 54000: with minibatch training loss = 0.4258989095687866
+Epoch 31, Overall loss = 0.37
+2019-02-24 18:37:06,745 : INFO : Iteration 54500: with minibatch training loss = 0.2623193860054016
+2019-02-24 18:38:16,952 : INFO : Iteration 55000: with minibatch training loss = 0.3485430181026459
+2019-02-24 18:39:27,835 : INFO : Iteration 55500: with minibatch training loss = 0.3285815119743347
+2019-02-24 18:40:39,770 : INFO : Iteration 56000: with minibatch training loss = 0.3204154372215271
+Epoch 32, Overall loss = 0.367
+2019-02-24 18:41:50,036 : INFO : Iteration 56500: with minibatch training loss = 0.4627700448036194
+2019-02-24 18:43:00,500 : INFO : Iteration 57000: with minibatch training loss = 0.32525816559791565
+2019-02-24 18:44:11,937 : INFO : Iteration 57500: with minibatch training loss = 0.46915268898010254
+Epoch 33, Overall loss = 0.37
+2019-02-24 18:45:23,192 : INFO : Iteration 58000: with minibatch training loss = 0.3108735978603363
+2019-02-24 18:46:33,121 : INFO : Iteration 58500: with minibatch training loss = 0.3383723795413971
+2019-02-24 18:47:44,315 : INFO : Iteration 59000: with minibatch training loss = 0.40042805671691895
+2019-02-24 18:48:56,077 : INFO : Iteration 59500: with minibatch training loss = 0.7021112442016602
+Epoch 34, Overall loss = 0.366
+2019-02-24 18:50:06,482 : INFO : Iteration 60000: with minibatch training loss = 0.33356156945228577
+2019-02-24 18:51:17,039 : INFO : Iteration 60500: with minibatch training loss = 0.35709935426712036
+2019-02-24 18:52:28,381 : INFO : Iteration 61000: with minibatch training loss = 0.33909231424331665
+Epoch 35, Overall loss = 0.365
+hit: 3333
+HR%10: 0.03243511517239366
+MAP%10: 0.12571778750131427
+NDCG%10: 0.1777935088393452
+2019-02-24 19:08:50,453 : INFO : Iteration 61500: with minibatch training loss = 0.37129735946655273
+2019-02-24 19:10:00,522 : INFO : Iteration 62000: with minibatch training loss = 0.3170716166496277
+2019-02-24 19:11:11,401 : INFO : Iteration 62500: with minibatch training loss = 0.3373425602912903
+2019-02-24 19:12:23,385 : INFO : Iteration 63000: with minibatch training loss = 0.33820345997810364
+Epoch 36, Overall loss = 0.366
+2019-02-24 19:13:33,747 : INFO : Iteration 63500: with minibatch training loss = 0.3544052839279175
+2019-02-24 19:14:44,256 : INFO : Iteration 64000: with minibatch training loss = 0.5235470533370972
+2019-02-24 19:15:55,465 : INFO : Iteration 64500: with minibatch training loss = 0.3025522828102112
+Epoch 37, Overall loss = 0.366
+2019-02-24 19:17:06,843 : INFO : Iteration 65000: with minibatch training loss = 0.2671307325363159
+2019-02-24 19:18:16,776 : INFO : Iteration 65500: with minibatch training loss = 0.3583720624446869
+2019-02-24 19:19:27,914 : INFO : Iteration 66000: with minibatch training loss = 0.2816469669342041
+2019-02-24 19:20:39,637 : INFO : Iteration 66500: with minibatch training loss = 0.30226874351501465
+Epoch 38, Overall loss = 0.366
+2019-02-24 19:21:49,952 : INFO : Iteration 67000: with minibatch training loss = 0.4812304377555847
+2019-02-24 19:23:00,349 : INFO : Iteration 67500: with minibatch training loss = 0.5040313005447388
+2019-02-24 19:24:11,763 : INFO : Iteration 68000: with minibatch training loss = 0.40066590905189514
+Epoch 39, Overall loss = 0.365
+2019-02-24 19:25:23,251 : INFO : Iteration 68500: with minibatch training loss = 0.37205639481544495
+2019-02-24 19:26:33,061 : INFO : Iteration 69000: with minibatch training loss = 0.38341331481933594
+2019-02-24 19:27:43,947 : INFO : Iteration 69500: with minibatch training loss = 0.4241176247596741
+2019-02-24 19:28:55,669 : INFO : Iteration 70000: with minibatch training loss = 0.330785870552063
+Epoch 40, Overall loss = 0.365
+hit: 3385
+HR%10: 0.03294115357292305
+MAP%10: 0.12498649263789403
+NDCG%10: 0.17838147552801428
+```
+即使添加多特征, 比NFM单特征差了不少  
