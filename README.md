@@ -582,3 +582,6 @@ https://github.com/Johnson0722/CTR_Prediction
 这是第一次实现多特征的FM模型, 希望能成功  
 
 2019/02/24  
+FM跑通了, 新学到sparse_placeholder等稀疏喂数据方式  
+现在在跑epoch = 40, 的程序, 跑完估计时间大约要 5 小时 ......  
+  
