@@ -837,3 +837,20 @@ NDCG%10: 0.17838147552801428
 今天放假  
 看阿丽塔, 玩疯兔~  
   
+2019/02/26  
+开始学习django  
+django框架内容真多, 规范复杂, 用的时候估计要大量查阅API文档
+
+model:  
+user: id, gender, ......  
+movie: id, name, year, ......  
+rating: rating_score, timestamp  
+  
+page:  
+index  
+login  
+userinfo  
+movieinfo -> score  
+recommendpage  
+
+最开始工作: 就把静态数据好好展示出来吧  
