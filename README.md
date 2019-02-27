@@ -859,3 +859,6 @@ recommendpage
 django自带的数据库sqlite3添加数据慢的不行...  
 7000多条数据, 1分钟还没处理完...  
 决定换mysql了   
+  
+数据载入完成  
+现在在做views视图层和模板层内容  
