@@ -854,3 +854,8 @@ movieinfo -> score
 recommendpage  
 
 最开始工作: 就把静态数据好好展示出来吧  
+
+2019/02/27  
+django自带的数据库sqlite3添加数据慢的不行...  
+7000多条数据, 1分钟还没处理完...  
+决定换mysql了   
