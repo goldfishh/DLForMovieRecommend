@@ -901,3 +901,6 @@ https://github.com/JaniceWuo/MovieRecommend
 
 2019/03/03  
 最近在做关于毕设有关的主题阅读, 工程方面暂时搁置, 之后可能会开始FM模型的改进  , 直到AFM, 突然发现Attention机制并不难理解, 就像FFM一样, 多了个权重层  
+
+2019/03/05  
+夭寿啦， 加了神经网络跟没加一个loss  
