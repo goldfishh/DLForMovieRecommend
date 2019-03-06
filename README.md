@@ -923,3 +923,5 @@ pick a bug：  in get random_block_from_data(data, batch_size):
 ~~item -= user~~  
 之后每轮mean_loss变得稳定下降了  
 但是指标并没有好转  
+发现一个很神奇的现象  
+在推荐时，用户用户越靠后， 用时越长， 这可能是因为rank比较高的电影用户都看过了  
