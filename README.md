@@ -910,8 +910,11 @@ sampler = np.random.permutation()
 下面这个函数有返回值， 返回重排列的dataFrame对象  
 ***dataFrame = dataFrame.take(sampler)***  
 embedding变量竟然有两声明了两次。。。  
-修改后
+修改后：  
 HR%10：0.036  
 MAP：0.14  
 NDCG：0.196  
 看来代码还得改， 有些地方不够优化  
+25轮后：  
+MAP：0.152  
+NDCG：0.213  
