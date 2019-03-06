@@ -918,3 +918,8 @@ NDCG：0.196
 25轮后：  
 MAP：0.152  
 NDCG：0.213  
+
+pick a bug：  in get random_block_from_data(data, batch_size):
+~~item -= user~~  
+之后每轮mean_loss变得稳定下降了  
+但是指标并没有好转  
