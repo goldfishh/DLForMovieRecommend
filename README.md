@@ -904,3 +904,8 @@ https://github.com/JaniceWuo/MovieRecommend
 
 2019/03/05  
 夭寿啦， 加了神经网络跟没加一个loss  
+训练集每一轮重排列时用  
+sampler = np.random.permutation()  
+***dataFrame.take(sampler)***  
+下面这个函数有返回值， 返回重排列的dataFrame对象  
+***dataFrame = dataFrame.take(sampler)***  
