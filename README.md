@@ -927,3 +927,7 @@ pick a bug：  in get random_block_from_data(data, batch_size):
 在推荐时，用户用户越靠后， 用时越长， 这可能是因为rank比较高的电影用户都看过了  
 修改一下placeholder（把sparse_placeholder舍去, 因为计算indices太耗时了）， 然后把IO放到全局里， 
 500次batch_size=500的训练耗时从68秒 -> 49秒，  
+训练128轮：  
+HR%10:0.044  
+MAP：0.168  
+NDCG：0.235  
